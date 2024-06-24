@@ -8,6 +8,24 @@
     Siedzi, czeka, w wodę patrzy <br>
     Czy już ryba chwyta haczyk <br> <br>
     Wciąż w bezruchu tkwi jak grzyb <br>
-    Bo w tej rzece nie ma ryb
+    Bo w tej rzece nie ma ryb <br> <br>
+    <button @click="zwiekszLicznik">Zwiększ licznik     </button>
+    {{ licznik }}
+
   </main>
 </template>
+
+<script>
+export default {
+  data(){
+    return {
+      licznik: 0
+    }
+  },
+  methods: {
+    zwiekszLicznik(){
+      this.licznik++
+    }
+  }
+}
+</script>
